@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Product } from '@prisma/client';
 import Image from 'next/image';
-import FavouriteToggleButton from './FavouriteToggleButton';
+import FavoriteToggleButton from './FavoriteToggleButton';
 
 function ProductsList({ products }: { products: Product[] }) {
     return (
@@ -43,7 +43,7 @@ function ProductsList({ products }: { products: Product[] }) {
                             </Card>
                         </Link>
                         <div className="absolute bottom-8 right-8 z-5">
-                            <FavouriteToggleButton productId={productId} />
+                            <FavoriteToggleButton productId={productId} />
                         </div>
                     </article>
                 );
